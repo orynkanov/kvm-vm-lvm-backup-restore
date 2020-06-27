@@ -52,7 +52,7 @@ _vmshutdown(){
 }
 
 _vmgetdisks(){
-    virsh domblklist "$1" --details | awk '/disk/ { print $4}'
+    virsh domblklist "$1" --details | awk '/disk/ {print $4}'
 }
 
 _lvrestore(){
